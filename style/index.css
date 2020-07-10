@@ -1,0 +1,182 @@
+html {
+  background-color: slategray;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 82.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: darkslategrey;
+}
+
+.one {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#about {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  margin: 8% 0% 0% 0%;
+}
+
+#about h2 {
+  display: flex;
+  justify-content: right;
+  text-align: center;
+  position: relative;
+  margin: 0% 0% 0% 25%;
+}
+
+#about button {
+  display: flex;
+  justify-content: right;
+  font-size: 1rem;
+  margin: 0% 0% 0% 25%;
+}
+
+#about p {
+  display: flex;
+  justify-content: right;
+  text-align: center;
+  position: relative;
+  margin: 0% 60% 0% 25%;
+}
+
+#about img {
+  margin: -5% 0% 0% 0%;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5% 0% 0% 0%;
+}
+
+#imageDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.imageDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+#contactMe {
+  display: flex;
+  justify-content: center;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+}
+
+.bgColor {
+  background-color: darkslategrey;
+}
+
+.aboutMe {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.favAnimals {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.favEditors {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.favCode {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+#Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#imgContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#projectDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+.pOne {
+  background-color: red;
+}
+
+.pTwo {
+  background-color: rosybrown;
+}
+
+.pThree {
+  background-color: slateblue;
+}
+
+.pOne:hover {
+  text-transform: uppercase;
+  background-color: teal;
+}
+
+.pTwo:hover {
+  text-transform: uppercase;
+  background-color: turquoise;
+}
+
+.pThree:hover {
+  text-transform: uppercase;
+  background-color: violet;
+}
+
+@media all and (max-width: 650px) {
+  body {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
