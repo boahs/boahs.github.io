@@ -9,7 +9,14 @@ a {
 }
 
 header {
+  border: 0.2rem solid #ab47bc;
   background-color: darkslategrey;
+  
+}
+
+body {
+  font-size: 1rem;
+  text-align: center;
 }
 
 .one {
@@ -22,7 +29,7 @@ header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
-  margin: 8% 0% 0% 0%;
+  margin: 8% 20% 10% 0%;
 }
 
 #about h2 {
@@ -49,6 +56,7 @@ header {
 }
 
 #about img {
+  text-align: center;
   margin: -5% 0% 0% 0%;
 }
 
@@ -63,6 +71,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 #images {
@@ -74,6 +84,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 footer h3 {
@@ -84,7 +96,9 @@ footer h3 {
   display: flex;
   justify-content: center;
 }
-
+.contactP{
+  margin: 2% 5% 2% 2%;
+}
 footer h2 {
   text-align: center;
 }
@@ -96,6 +110,8 @@ footer h2 {
 
 .bgColor {
   background-color: darkslategrey;
+  border: 0.2rem solid #ab47bc;
+  padding: 8px;
 }
 
 .aboutMe {
@@ -175,8 +191,15 @@ footer h2 {
     font-size: 3rem;
   }
   footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+      flex-shrink: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 3%;
+      margin-top: 4%;
+
   }
+
+
 }
+
+
