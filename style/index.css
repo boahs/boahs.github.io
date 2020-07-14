@@ -1,205 +1,200 @@
-html {
-  background-color: slategray;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 82.5%;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+/* ^ body & site-content ADDS STICKY FOOTER ^  */
+
+/* ^ css reset ^ */
 
 a {
   text-decoration: none;
 }
 
+main {
+  background-color: darkgrey;
+}
+
 header {
-  border: 0.2rem solid #ab47bc;
-  background-color: darkslategrey;
-  
+  background-color: khaki;
+  margin-bottom: 1rem;
 }
 
-body {
-  font-size: 1rem;
-  text-align: center;
-}
-
-.one {
+header nav {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  margin-left: 1rem;
 }
 
-#about {
+header h1 {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+header h1 {
+  margin-bottom: 2%;
+}
+
+/* ^ Header css ^ */
+
+#bodyContainer {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  margin: 8% 20% 10% 0%;
 }
 
-#about h2 {
-  display: flex;
-  justify-content: right;
-  text-align: center;
-  position: relative;
-  margin: 0% 0% 0% 25%;
+.headerText {
+  padding: 10%;
 }
 
-#about button {
-  display: flex;
-  justify-content: right;
-  font-size: 1rem;
-  margin: 0% 0% 0% 25%;
+.headerText button {
+  margin: 2% 0;
 }
 
-#about p {
-  display: flex;
-  justify-content: right;
-  text-align: center;
-  position: relative;
-  margin: 0% 60% 0% 25%;
-}
-
-#about img {
-  text-align: center;
-  margin: -5% 0% 0% 0%;
-}
-
-.images {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 5% 0% 0% 0%;
-}
-
-#imageDescription {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 1.5rem;
-  font-weight: bolder;
-}
-
-#images {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.imageDescription {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 1.5rem;
-  font-weight: bolder;
-}
-
-footer h3 {
-  text-align: center;
-}
-
-#contactMe {
-  display: flex;
-  justify-content: center;
-}
-.contactP{
-  margin: 2% 5% 2% 2%;
-}
-footer h2 {
-  text-align: center;
-}
-
-#social {
-  display: flex;
-  justify-content: center;
-}
-
-.bgColor {
-  background-color: darkslategrey;
-  border: 0.2rem solid #ab47bc;
-  padding: 8px;
-}
-
-.aboutMe {
-  text-align: center;
+.headerText h2 {
   font-size: 1.5rem;
 }
 
-.favAnimals {
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
-
-.favEditors {
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
-
-.favCode {
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
-
-#Container {
+.projects {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-#imgContainer {
+.projectContainer {
+  width: 23%;
+  text-align: center;
+}
+
+#footerContainer {
+  background-color: khaki;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 
-#projectDetails {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 1.5rem;
-}
-
-.pOne {
-  background-color: red;
-}
-
-.pTwo {
-  background-color: rosybrown;
-}
-
-.pThree {
-  background-color: slateblue;
-}
-
-.pOne:hover {
-  text-transform: uppercase;
-  background-color: teal;
-}
-
-.pTwo:hover {
-  text-transform: uppercase;
-  background-color: turquoise;
-}
-
-.pThree:hover {
-  text-transform: uppercase;
-  background-color: violet;
-}
-
-@media all and (max-width: 650px) {
-  body {
-    font-size: 1.5rem;
+@media only screen and (max-width: 800px) {
+  .site-content #navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  h1 {
-    font-size: 3rem;
+  nav {
+    flex-direction: column;
   }
-  h2 {
-    font-size: 3rem;
+  #bodyContainer img {
+    margin-left: 95%;
   }
-  footer {
-      flex-shrink: 0;
-      bottom: 0;
-      width: 100%;
-      padding: 3%;
-      margin-top: 4%;
-
+  .headerText {
+    margin: 10% 25% 0% 0%;
   }
-
-
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+  }
 }
 
-
+@media only screen and (max-width: 500px) {
+  .site-content #navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    flex-direction: column;
+  }
+  #bodyContainer img {
+    margin-left: 95%;
+  }
+  .headerText {
+    margin: 10% 25% 0% 0%;
+  }
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+  }
+  @media only screen and (max-width: 360px) and (max-device-width: 640px) {
+    .site-content #navBar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav {
+      flex-direction: column;
+    }
+    #bodyContainer img {
+      margin-left: 95%;
+    }
+    .headerText {
+      margin: 10% 25% 0% 0%;
+    }
+    .projectContainer {
+      display: flex;
+      flex-direction: column;
+      flex: 40%;
+    }
+  }
+  @media only screen and (max-width: 1366px) and (max-device-width: 768px) {
+    .site-content #navBar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav {
+      flex-direction: column;
+    }
+    #bodyContainer img {
+      margin-left: 95%;
+    }
+    .headerText {
+      margin: 10% 25% 0% 0%;
+    }
+    .projectContainer {
+      display: flex;
+      flex-direction: column;
+      flex: 40%;
+    }
+  }
+  @media only screen and (max-width: 1920px) and (max-device-width: 1080px) {
+    .site-content #navBar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .headerText {
+      font-size: 15rem;
+    }
+    nav {
+      flex-direction: column;
+    }
+    #bodyContainer img {
+      margin-left: 95%;
+    }
+    .headerText {
+      margin: 10% 25% 0% 0%;
+    }
+    .projectContainer {
+      display: flex;
+      flex-direction: column;
+      flex: 40%;
+    }
+  }
+}
